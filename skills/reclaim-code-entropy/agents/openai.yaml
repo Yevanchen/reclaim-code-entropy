@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reclaim Code Entropy"
+  short_description: "Find and safely remove accidental codebase complexity"
+  default_prompt: "Use $reclaim-code-entropy to audit this repository for evidence-backed simplifications and rank the safest cuts."
