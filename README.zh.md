@@ -2,8 +2,6 @@
 
 > 一个以证据为先、用于安全化简任意代码库的 Agent Skill。
 
-这个 Skill 受到 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 开发过程中大量代码化简实践的启发，把“删代码”从个人品味变成可重复执行的工程流程。
-
 [English](./README.md) | 简体中文
 
 ## 问题所在
@@ -92,12 +90,7 @@ cp -R reclaim-code-entropy/skills/reclaim-code-entropy ~/.codex/skills/
 
 ## 如何判断它在起作用
 
-- 清理建议会明确列出消费者和兼容风险
-- diff 删除概念，而不是用新抽象替换旧抽象
-- 公开、持久化和动态入口都经过主动确认
-- 保留的测试描述可观察行为，而不是已经删除的内部实现
-- 每一批修改都可审查、可回滚，并且整体更简单
-- 当证据不足时，能够接受“保留不动”这个结论
+有效结果应当可审查、减少概念且不掩盖兼容风险；证据不足时，“保留不动”仍是正确结论。
 
 ## 安全边界
 
