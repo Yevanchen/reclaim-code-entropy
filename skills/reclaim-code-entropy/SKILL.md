@@ -63,9 +63,7 @@ Keep or downgrade a candidate when any of these holds:
 - A real production or external consumer exists.
 - Dynamic reachability or compatibility cannot be ruled out.
 - A current decision record justifies the surface and new evidence does not beat it.
-- The change is actually a feature or API decision, not cleanup.
 - Churn moves complexity elsewhere without shrinking the contract or number of truths.
-- A new dependency needs a wrapper and dedicated tests comparable to the deleted implementation.
 - The candidate is tiny, uncertain, or unrelated to the requested scope.
 
 Use this compact evidence record in audit output:
@@ -113,5 +111,3 @@ For applied changes, report:
 - any user-visible capability or compatibility behavior changed;
 - exact validation run and result;
 - high-value candidates intentionally kept and why.
-
-Do not claim safety from green tests alone, and do not claim value from deletion volume alone.

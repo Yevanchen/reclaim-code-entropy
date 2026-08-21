@@ -2,8 +2,6 @@
 
 > An evidence-first Agent Skill for safely simplifying any codebase.
 
-Inspired by the unusually deletion-heavy development practice visible in [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness), this skill turns “delete code” from taste into a repeatable engineering workflow.
-
 English | [简体中文](./README.zh.md)
 
 ## The Problem
@@ -92,12 +90,7 @@ A large deletion can be wrong. A small deletion can remove an entire maintenance
 
 ## How to Know It Is Working
 
-- cleanup proposals name exact consumers and compatibility risks
-- diffs remove concepts instead of replacing them with new abstractions
-- public, persisted, and dynamic entrypoints remain deliberate
-- surviving tests describe observable behavior rather than deleted internals
-- each applied batch is reviewable, reversible, and net simpler
-- “keep it” is accepted when the evidence does not justify deletion
+A useful result is reviewable, reduces concepts without hiding compatibility risk, and may still conclude that no safe cut exists.
 
 ## Safety Boundaries
 
